@@ -81,13 +81,13 @@ const App = () => {
       <form onSubmit={handleSubmit} className="note-form">
         <input
           type="text"
-          placeholder="Your name"
+          placeholder="Author name"
           value={newNote.author}
           onChange={(e) => setNewNote(prev => ({ ...prev, author: e.target.value }))}
           required
         />
         <textarea
-          placeholder="What's on your mind?"
+          placeholder="Put Your Content?"
           value={newNote.content}
           onChange={(e) => setNewNote(prev => ({ ...prev, content: e.target.value }))}
           required
